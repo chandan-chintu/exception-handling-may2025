@@ -7,12 +7,12 @@ public class ThrowExample {
             if(a==10){
                 throw new RuntimeException("a value is 10 and exception occurred");
             }
-
             String customer = null;
             if(customer == null){
                 throw new RuntimeException("Customer not found in database");
             }
         } catch (Exception e) {
+            // add dummy lines
             System.out.println("Exception occurred : "+e.getMessage());
         }
     }
